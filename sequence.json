@@ -1,0 +1,10 @@
+{
+  "sequence": [
+    { "type": "emotion", "value": "thinking", "duration": 3 },
+    { "type": "action", "value": "sitting", "duration": 5 },
+    { "type": "emotion", "value": "curious", "duration": 2 },
+    { "type": "action", "value": "waving", "duration": 1 },
+    { "type": "emotion", "value": "happy", "duration": 2 }
+  ],
+  "loop": true
+}
