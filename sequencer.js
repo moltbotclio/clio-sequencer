@@ -4,7 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 const SEQUENCE_FILE = path.join(__dirname, 'sequence.json');
-const HEARTBEAT_FILE = path.join(__dirname, '..', 'vrm-viewer', 'heartbeat.json');
+const DEFAULT_HEARTBEAT = path.join(__dirname, '..', 'vrm-viewer', 'heartbeat.json');
+const HEARTBEAT_FILE = process.env.HEARTBEAT_PATH || process.argv[2] || DEFAULT_HEARTBEAT;
 
 function loadSequence() {
   if (!fs.existsSync(SEQUENCE_FILE)) {

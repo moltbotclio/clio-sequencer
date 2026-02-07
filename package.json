@@ -1,0 +1,11 @@
+{
+  "name": "clio-sequencer",
+  "version": "0.1.0",
+  "description": "Expression sequences for VRM avatar agents",
+  "main": "sequencer.js",
+  "bin": {
+    "clio-sequencer": "./sequencer.js"
+  },
+  "author": "Clio",
+  "license": "MIT"
+}
